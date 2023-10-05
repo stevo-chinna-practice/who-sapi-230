@@ -2,7 +2,7 @@ http:
   port: "8081"
   
 jms:
-  who.broker.url: "![K08c6f7Sd1pfzNMEqUADjVbE+0xjmFxeHYPuXpDmwUA=]"
+  who.broker.url: "![eWhHR/1BChVE8B7YgZ5wdCCbfKc1YIj4MY8VcwiTcdQ=]"
   who.username: "![qbNVHoyilMguV3wOS45CFQ==]"
   who.password: "![qbNVHoyilMguV3wOS45CFQ==]"
   who.covid.case.queue: "![uNmUCZexTfpGPKBJ+c4cmAhgi+E8qzxEJrpjOFkYiCM=]"
