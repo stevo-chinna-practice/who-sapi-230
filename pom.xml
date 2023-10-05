@@ -107,7 +107,7 @@
 					<sharedLibraries>
 						<sharedLibrary>
 							<groupId>org.apache.activemq</groupId>
-							<artifactId>activemq-kahadb-store</artifactId>
+							<artifactId>activemq-client</artifactId>
 						</sharedLibrary>
 					</sharedLibraries>
 				</configuration>
