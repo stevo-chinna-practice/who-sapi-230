@@ -2,9 +2,9 @@ http:
   port: "8081"
   
 jms:
-  who.broker.url: "![eWhHR/1BChVE8B7YgZ5wdCCbfKc1YIj4MY8VcwiTcdQ=]"
-  who.username: "![qbNVHoyilMguV3wOS45CFQ==]"
-  who.password: "![qbNVHoyilMguV3wOS45CFQ==]"
-  who.covid.case.queue: "![uNmUCZexTfpGPKBJ+c4cmAhgi+E8qzxEJrpjOFkYiCM=]"
+  who.broker.url: "tcp://0.0.0.0:61616"
+  who.username: "admin"
+  who.password: "admin"
+  who.covid.case.queue: "Q.WHO.COVID.CASE.REPORT"
 
  
