@@ -91,7 +91,6 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0</muleVersion>
@@ -102,12 +101,19 @@
 							<anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
 							<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com/</anypoint.platform.analytics_base_uri>
 						</properties>
-					</cloudHubDeployment>					
-				
+					</cloudHubDeployment>
 					<sharedLibraries>
 						<sharedLibrary>
 							<groupId>org.apache.activemq</groupId>
 							<artifactId>activemq-client</artifactId>
+						</sharedLibrary>
+						<sharedLibrary>
+							<groupId>org.apache.activemq</groupId>
+							<artifactId>activemq-broker</artifactId>
+						</sharedLibrary>
+						<sharedLibrary>
+							<groupId>org.apache.activemq</groupId>
+							<artifactId>activemq-kahadb-store</artifactId>
 						</sharedLibrary>
 					</sharedLibraries>
 				</configuration>
@@ -156,7 +162,17 @@
 			<artifactId>mule-objectstore-connector</artifactId>
 			<version>1.2.0</version>
 			<classifier>mule-plugin</classifier>
-		</dependency>		
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-broker</artifactId>
+			<version>5.15.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-kahadb-store</artifactId>
+			<version>5.15.4</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
