@@ -6,7 +6,7 @@
 http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd">
 	<sub-flow name="publish-covid-case-to-who" doc:id="d0456862-2de7-435f-b3dc-191c0474cf16" >
 		<logger level="DEBUG" doc:name="Before Backend Call" doc:id="53297290-0721-4c74-bf14-3dd1f681c68d" message='transactionID: #[vars.transactionId]], correlationID: #[vars.correlationId], message: "Before publish case to who JMS", payload: #[payload], attributes: #[vars.dynamicProperties]'/>
-		<jms:publish doc:name="Publish Case To WHO" doc:id="203f823a-c9fc-485f-a138-5b7d397aa66a" config-ref="JMS_UHO_Config" destination="${jms.who.covid.case.queue}">
+		<jms:publish doc:name="Publish Case To WHO" doc:id="203f823a-c9fc-485f-a138-5b7d397aa66a" config-ref="JMS_UHO_Config" destination="${secure::jms.who.covid.case.queue}">
 			<jms:message>
 				<jms:properties><![CDATA[#[vars.dynamicProperties]]]></jms:properties>
 			</jms:message>
