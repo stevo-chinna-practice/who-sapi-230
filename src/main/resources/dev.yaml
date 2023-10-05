@@ -2,7 +2,7 @@ http:
   port: "8081"
   
 jms:
-  who.broker.url: "tcp://localhost:61616"
+  who.broker.url: "tcp://localhost:8161"
   who.username: "![qbNVHoyilMguV3wOS45CFQ==]"
   who.password: "![qbNVHoyilMguV3wOS45CFQ==]"
   who.covid.case.queue: "![uNmUCZexTfpGPKBJ+c4cmAhgi+E8qzxEJrpjOFkYiCM=]"
