@@ -23,7 +23,7 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
 			<jms:caching-strategy >
 				<jms:no-caching />
 			</jms:caching-strategy>
-			<jms:factory-configuration brokerUrl="tcp://localhost:61616" />
+			<jms:factory-configuration brokerUrl="tcp://0.0.0.0:61616" />
 		</jms:active-mq-connection>
 	</jms:config>
 	<api-gateway:autodiscovery apiId="${api.id}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="73c257f4-0058-4312-94c0-f7a7445ab546" flowRef="who-sapi-main" />
