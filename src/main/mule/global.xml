@@ -19,11 +19,11 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
     </http:listener-config>
     <apikit:config name="who-sapi-config" api="who-sapi.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
 	<jms:config name="JMS_UHO_Config" doc:name="JMS Config" doc:id="0e8f07d2-fd89-411a-965a-bec70087d56f" >
-		<jms:active-mq-connection username="${secure::jms.who.username}" password="${secure::jms.who.password}">
+		<jms:active-mq-connection username="admin" password="admin">
 			<jms:caching-strategy >
 				<jms:no-caching />
 			</jms:caching-strategy>
-			<jms:factory-configuration brokerUrl="${secure::jms.who.broker.url}" />
+			<jms:factory-configuration brokerUrl="tcp://localhost:61616" />
 		</jms:active-mq-connection>
 	</jms:config>
 	<api-gateway:autodiscovery apiId="${api.id}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="73c257f4-0058-4312-94c0-f7a7445ab546" flowRef="who-sapi-main" />
