@@ -19,7 +19,7 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
     </http:listener-config>
     <apikit:config name="who-sapi-config" api="who-sapi.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
 	<jms:config name="JMS_UHO_Config" doc:name="JMS Config" doc:id="0e8f07d2-fd89-411a-965a-bec70087d56f" >
-		<jms:active-mq-connection username="admin" password="admin">
+		<jms:active-mq-connection username="admin" password="admin" clientId="RSL-Dzunukwa-49741-1696793365180-0:1">
 			<jms:caching-strategy >
 				<jms:no-caching />
 			</jms:caching-strategy>
